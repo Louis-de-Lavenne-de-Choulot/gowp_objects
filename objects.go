@@ -5,12 +5,19 @@ import (
 	"net/http"
 )
 
+type RootImport struct {
+	Routes                []RouteImport
+	ExtPageBoundFunctions map[int64]string
+	BoundFunctions        []string
+}
+
 type RouteImport struct {
 	Name           string
 	PagePath       string
 	PageID         int64
 	PageReferences []string
 	Role           int64
+	BoundFunctions []string
 }
 
 type Route struct {
