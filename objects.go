@@ -25,8 +25,10 @@ type Route struct {
 	Name           string // ex index
 	PagePath       string // ex /files/index.html
 	PageID         int64
-	PageReferences map[string]int64
 	Role           int64 // minimum role to access this route
+	PageReferences map[string]int64
+	URLS           map[string]string
+	BoundFunctions []string
 }
 
 type BaseServer struct {
