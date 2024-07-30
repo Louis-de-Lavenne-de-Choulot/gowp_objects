@@ -28,7 +28,7 @@ type Route struct {
 	Role           int64 // minimum role to access this route
 	PageReferences map[string]int64
 	URLS           map[string]string
-	BoundFunctions []string
+	BoundFunctions map[string]string
 }
 
 type BaseServer struct {
