@@ -17,7 +17,7 @@ type RouteImport struct {
 	InPluginPage   bool
 	PageID         int64
 	PageReferences []string
-	Role           int64
+	Role           int
 	BoundFunctions []string
 }
 
@@ -26,14 +26,14 @@ type Route struct {
 	Name           string // ex index
 	PagePath       string // ex /files/index.html
 	PageID         int64
-	Role           int64 // minimum role to access this route
+	Role           int // minimum role to access this route
 	PageReferences map[string]int64
 	URLS           map[string]string
 	BoundFunctions map[string][]string
 }
 
 type User struct {
-	ID       int
+	ID       int64
 	Username string
 	Name     string
 	Surname  string
