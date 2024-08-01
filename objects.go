@@ -32,7 +32,6 @@ type Route struct {
 	BoundFunctions map[string][]string
 }
 
-// `id` INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT NOT NULL, username TEXT UNIQUE NOT NULL DEFAULT ”, `name` TEXT, `surname` TEXT, `email` TEXT, hash TEXT NOT NULL DEFAULT ”, salt BLOB NOT NULL DEFAULT ”
 type User struct {
 	ID       int64
 	Username string
