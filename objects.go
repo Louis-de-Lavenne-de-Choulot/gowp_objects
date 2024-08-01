@@ -14,6 +14,7 @@ type RootImport struct {
 type RouteImport struct {
 	Name           string
 	PagePath       string
+	InPluginPage   bool
 	PageID         int64
 	PageReferences []string
 	Role           int64
@@ -28,7 +29,7 @@ type Route struct {
 	Role           int64 // minimum role to access this route
 	PageReferences map[string]int64
 	URLS           map[string]string
-	BoundFunctions map[string]string
+	BoundFunctions map[string][]string
 }
 
 type BaseServer struct {
