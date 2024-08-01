@@ -33,12 +33,12 @@ type Route struct {
 }
 
 type User struct {
-	ID       int64
+	ID       int
 	Username string
 	Name     string
 	Surname  string
 	Email    string
-	Role     int64
+	Role     int
 }
 
 type BaseServer struct {
