@@ -12,9 +12,10 @@ type RootImport struct {
 }
 
 type RouteImport struct {
-	Name           string
+	Title          string
+	Slug           string
 	PagePath       string
-	MainMenuPage   bool
+	MainMenuPage   string
 	InMenu         bool
 	InPluginPage   bool
 	PageID         int64
@@ -25,7 +26,8 @@ type RouteImport struct {
 
 type Route struct {
 	ID             int64
-	Name           string // ex index
+	Title          string // ex Home
+	Slug           string // ex /index
 	PagePath       string // ex /files/index.html
 	PageID         int64
 	InMenu         bool
