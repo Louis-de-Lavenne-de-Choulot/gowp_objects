@@ -14,6 +14,8 @@ type RootImport struct {
 type RouteImport struct {
 	Name           string
 	PagePath       string
+	MainMenuPage   bool
+	InMenu         bool
 	InPluginPage   bool
 	PageID         int64
 	PageReferences []string
@@ -26,6 +28,7 @@ type Route struct {
 	Name           string // ex index
 	PagePath       string // ex /files/index.html
 	PageID         int64
+	InMenu         bool
 	Role           int // minimum role to access this route
 	PageReferences map[string]int64
 	URLS           map[string]string
